@@ -1,0 +1,171 @@
+/* all files */
+.navbar {
+  margin: 15px 0;
+}
+.navbar ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.navbar li {
+  display: inline;
+}
+
+.page {
+  margin: auto;
+  text-align: center;
+}
+
+/* end of all files */
+
+/* index.html */
+img {
+  border-radius: 8px;
+  display: block;
+  margin: auto;
+  height: 200px;
+  width: 200px;
+}
+
+p {
+  text-indent: 100px;
+}
+/* end of index.html */
+
+/* contact.html */
+.contact ul {
+  list-style-type: none;
+}
+
+/* end of contact.html */
+
+/* portfolio.html - body and header */
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0 15px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+header {
+  margin-top: 40px;
+}
+
+.topnav {
+  border-radius: 8px;
+  height: 50px;
+  overflow: hidden;
+  background-color: #e9e9e9;
+}
+
+.topnav img {
+  float: left;
+  display: block;
+  margin: 5px 10px 0px 50px;
+}
+
+.topnav .my-app a {
+  float: left;
+  color: black;
+  text-align: center;
+  padding: 15px 16px;
+  text-decoration: none;
+  font-size: 18px;
+}
+
+/* .topnav a:hover {
+  background-color: #ddd;
+  color: black;
+} */
+
+/* .topnav a.active {
+  background-color: #2196f3;
+  color: white;
+} */
+
+.topnav .search-container {
+  float: left;
+  margin-left: 200px;
+}
+
+.topnav input[type="text"] {
+  padding: 6px;
+  margin-top: 11px;
+  font-size: 14px;
+  border: none;
+  width: 400px;
+}
+
+.topnav .search-container button {
+  float: right;
+  padding: 6px 10px;
+  margin-top: 11px;
+  margin-right: 16px;
+  background: white;
+  font-size: 14px;
+  border: none;
+  cursor: pointer;
+}
+
+.topnav .search-button button {
+  float: left;
+  border-radius: 12px;
+  background-color: #2196f3;
+  color: white;
+  display: block;
+  margin-top: 10px;
+  height: 30px;
+  text-decoration: none;
+  font-size: 14px;
+  font-weight: bold;
+  width: 100px;
+  border-style: none;
+}
+
+.topnav .new-product a {
+  float: right;
+  padding: 15px 16px;
+  margin-right: 80px;
+  font-size: 14px;
+  text-decoration: underline;
+  color: #2196f3;
+}
+
+.topnav .search-container button:hover {
+  background: #ccc;
+}
+
+.topnav .search-container button:hover {
+  background: #ccc;
+}
+/* end of portfolio.html - body and header */
+
+/* portfolio.html - section */
+.grid-container {
+  display: grid;
+  margin-top: 40px;
+  grid-template-columns: 20% 25% 20% 25%;
+  justify-content: center;  
+}
+.grid-item-product-image {
+  background-color: rgba(255, 255, 255, 0.8);
+  border: none;
+  padding: 20px;
+}
+
+.grid-item-product-detail {
+  background-color: rgba(255, 255, 255, 0.8);
+  border: none;
+  padding: 20px;
+  font-size: 18px;
+  text-align: left;
+}
+
+.grid-item-product-detail ul {
+  list-style-type: "-  ";
+}
+
+/* end of portfolio.html - section */
