@@ -171,3 +171,38 @@ main .right img {
   width: 180px;
 }
 /* End of Properties */
+
+/* Customers */
+.customers {
+  margin-left: 100px;
+  margin-top: 200px;
+}
+
+.customers h1 {
+  margin-bottom: 50px;
+}
+
+.customers .cards {
+  display: grid;
+  grid-template-columns: repeat(2, 50%);
+  /* height: 80vh; */
+}
+
+.customers .cards .card:first-child img {
+  width: 50%;
+  justify-content: center;
+  border-radius: 15px;
+  /* height: 100%; */
+  object-fit: cover;
+}
+
+.customers .cards .card:last-child {
+  align-self: center;
+  width: 80%;
+}
+
+.customers .cards .card:last-child p em {
+  font-style: normal;
+  font-weight: bold;
+}
+/* End of Customers */
