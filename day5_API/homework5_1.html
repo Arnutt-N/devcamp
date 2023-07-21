@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        h1 {
+            text-align: center;
+        }
+
+        table {
+            margin-top: 20px;
+            margin-left: auto;
+            margin-right: auto;
+            text-align: center;
+        }
+
+        table tr td {
+            border: none;
+            padding: 20px;
+        }
+
+        span {
+            display: block;
+        }
+    </style>
+
+</head>
+
+<body>
+    <div class="container">
+        <h1>Hello ReqRes users!</h1>
+        <table>
+            <tr id="rowDisplay"></tr>
+        </table>
+    </div>
+
+    <script>
+        axios.get("https://reqres.in/api/users/").then(function (response) {
+            let rowDisplay = document.getElementById('rowDisplay');
+            let textHtml = '';
+            for (let i = 0; i < response.data.data.length; i++) {
+                let first_name = response.data.data[i].first_name;
+                let email = "<span>" + response.data.data[i].email + "</span>"
+                let img = "<p><img src='" + response.data.data[i].avatar + "'></p>";
+                textHtml += "<td>" + first_name + email + img + "</td>";
+            }
+            rowDisplay.innerHTML = textHtml;
+        });
+    </script>
+
+</body>
+
+</html>

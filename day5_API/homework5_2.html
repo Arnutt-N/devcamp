@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>COVID-19 Data</title>
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        h1 {
+            margin-top: 20px;
+            text-align: center;
+        }
+
+        table,
+        th,
+        tr,
+        td {
+            border: 1px solid gray;
+            padding: 8px;
+        }
+
+        table {
+            width: 80%;
+            border-collapse: collapse;
+            margin-top: 20px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+    </style>
+
+</head>
+
+<body>
+    <div class="container">
+        <h1>COVID-19 Data</h1>
+        <table>
+            <thead>
+                <tr>
+                    <th>Category</th>
+                    <th>cases</th>
+                    <th>todayCases</th>
+                    <th>deaths</th>
+                    <th>todayDeaths</th>
+                    <th>recovered</th>
+                    <th>todayRecovered</th>
+                    <th>active</th>
+                    <th>critical</th>
+                </tr>
+            </thead>
+            <tbody id="showCovidData">
+            </tbody>
+
+        </table>
+    </div>
+
+    <script>
+        function getCovidDataHTML(category, cases, todayCases, deaths, todayDeaths, recovered, todayRecovered, active, critical) {
+            return `
+                <td> ${category || 'World'}</td>
+                <td> ${cases} </td>
+                <td> ${todayCases} </td>
+                <td> ${deaths} </td>
+                <td> ${todayDeaths} </td>
+                <td> ${recovered} </td>
+                <td> ${todayRecovered} </td>
+                <td> ${active} </td>
+                <td> ${critical} </td>
+                `;
+        }
+        let covidData = [];
+        let covidAllUrl = "https://corona.lmao.ninja/v3/covid-19/all";
+        let covidThUrl = "https://corona.lmao.ninja/v3/covid-19/countries/thailand";
+
+        function getCovidData(callback) {
+            axios.get(covidAllUrl).then(function (response) {
+                console.log(response.data)
+                covidData.push(["World", response.data])
+                //covidData.World = response.data
+                callback();
+            })
+        }
+        function getCovidData2(callback) {
+            axios.get(covidThUrl).then(function (response2) {
+                console.log(response2.data)
+                covidData.push(["Thailand", response2.data])
+                //covidData.Thailand = response2.data
+                callback();
+            })
+        }
+        getCovidData(function () {
+            //debugger;
+            getCovidData2(function () {
+                console.log(covidData);
+                //console.log(covidData[0]);
+                const element = document.getElementById('showCovidData');
+                element.innerHTML = "";
+                for (let i = 0; i < covidData.length; i++) {
+                    let category = covidData[i][1].country;
+                    let cases = covidData[i][1].cases;
+                    let todayCases = covidData[i][1].todayCases;
+                    let deaths = covidData[i][1].deaths;
+                    let todayDeaths = covidData[i][1].todayDeaths;
+                    let recovered = covidData[i][1].recovered;
+                    let todayRecovered = covidData[i][1].todayRecovered;
+                    let active = covidData[i][1].active;
+                    let critical = covidData[i][1].critical;
+                    element.innerHTML += getCovidDataHTML(category, cases, todayCases, deaths, todayDeaths, recovered, todayRecovered, active, critical);
+                }
+                // Convert array to object
+                const covidDataToObj = Object.fromEntries(covidData);
+                console.log(covidDataToObj);
+            });
+        });
+    </script>
+</body>
+
+</html>
