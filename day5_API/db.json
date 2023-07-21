@@ -1,0 +1,84 @@
+{
+    "gender": [
+        {
+            "id": "Janet",
+            "count": 251882,
+            "gender": "female",
+            "name": "Janet",
+            "probability": 1
+        },
+        {
+            "id": "Tracey",
+            "count": 10803,
+            "gender": "female",
+            "name": "Tracey",
+            "probability": 0.97
+        },
+        {
+            "id": "Eve",
+            "count": 45252,
+            "gender": "female",
+            "name": "Eve",
+            "probability": 0.99
+        },
+        {
+            "id": "Emma",
+            "count": 344546,
+            "gender": "female",
+            "name": "Emma",
+            "probability": 0.99
+        },
+        {
+            "id": "Charles",
+            "count": 487939,
+            "gender": "male",
+            "name": "Charles",
+            "probability": 1
+        },
+        {
+            "id": "George",
+            "count": 542554,
+            "gender": "male",
+            "name": "George",
+            "probability": 1
+        }
+    ],
+    "ages": [
+        {
+            "id": "Charles",
+            "age": 70,
+            "count": 61214,
+            "name": "Charles"
+        },
+        {
+            "id": "Janet",
+            "age": 73,
+            "ount": 22682,
+            "name": "Janet"
+        },
+        {
+            "id": "Emma",
+            "age": 40,
+            "ount": 56913,
+            "name": "Emma"
+        },
+        {
+            "id": "Eve",
+            "age": 61,
+            "ount": 11817,
+            "name": "Eve"
+        },
+        {
+            "id": "George",
+            "age": 73,
+            "ount": 71419,
+            "name": "George"
+        },
+        {
+            "id": "Tracey",
+            "age": 57,
+            "ount": 8847,
+            "name": "Tracey"
+        }
+    ]
+}
