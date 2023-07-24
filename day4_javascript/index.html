@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div {
+            display: flex;
+        }
+    </style>
+</head>
+<body>
+    <div id="input-content">Hello World!</div>
+    <script>
+        const element = document.getElementById("input-content");
+        console.log(element);
+        element.innerHTML = "";
+        const numberOfSorWor = 5;
+        for (let i = 0; i < numberOfSorWor ; i++) {
+            if (i % 2 == 0)
+             element.innerHTML += "<h1 style='background:red;color:white;text-align:center;'>No Vote</h1>";
+            else if (i % 3 == 1)
+            element.innerHTML += "<h1 style='background:blue;color:white;text-align:center;'>No Vote</h1>";
+            else
+            element.innerHTML += "<h1 style='background:green;color:white;text-align:center;'>Vote Yes</h1>";
+
+        }
+    </script>
+</body>
+</html>
