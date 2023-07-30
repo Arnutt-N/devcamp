@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="en" class="box-border m-0 p-0">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tailwind CSS HomeWrok 1</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+        integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        @import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;0,500;0,700;0,900;1,300;1,400;1,500;1,700;1,900&display=swap");
+
+        * {
+            font-family: "Roboto", sans-serif;
+        }
+    </style>
+</head>
+
+<body class="color-[#333] bg-white leading-[1.6]">
+    <!-- Header -->
+    <header
+        class="bg-[url('images/construction-works-frankfurt-downtown-germany.jpg')] h-[120vh] relative bg-cover text-white before:content-[''] before:absolute before:top-0 before:left-0 before:w-[100%] before:h-[100%] before:bg-[rgba(0,0,0,0.4)]">
+        <!-- Navbar -->
+        <nav
+            class="flex justify-between items-center bg-black bg-opacity-50 text-white w-[100%] h-[80px] fixed top-[0px] px-[20px] py-0 z-[9999]">
+            <img class="w-[50px]" src="images/11259-removebg-preview.png" alt="">
+            <ul class="flex list-none items-center">
+                <li class="mr-[20px] text-[14px]"><a class="text-white no-underline" href="#">Projects</a></li>
+                <li class="mr-[20px] text-[14px]"><a class="text-white no-underline" href="#">Gallery</a></li>
+                <li class="mr-[20px] text-[14px]"><a class="text-white no-underline" href="#">Human Resources</a></li>
+                <li class="mr-[20px] text-[14px]"><a class="text-white no-underline" href="#">About Us</a></li>
+                <li class="mr-[20px] text-[14px]"><a class="text-white no-underline" href="#">News</a></li>
+                <li class="mr-[20px] text-[14px]"><a class="text-white no-underline" href="#">Contact Us</a></li>
+                <li
+                    class="mr-[20px] text-[10px] bg-green-900 h-[30px] w-[80px] rotate-90 flex items-center justify-around rounded-r-[15px] mr-0">
+                    <a class="text-white no-underline" href="#">Call Us <span class="icon ml-[5px]"> <i
+                                class="fa-solid fa-square-phone fa-xl"></i> </span> </a>
+                </li>
+                <li class="mr-[20px] text-[16px] flex flex-col text-left ml-[-10px]"><a href="#">0212 228 42 18</a>
+                    <span class="text-[12px] font-normal">info@enkayegeyapi.com</span>
+                </li>
+
+            </ul>
+        </nav>
+
+        <!-- Slogan -->
+        <div class="slogan absolute mt-[200px] ml-[200px]">
+            <div
+                class="slogan-detail flex flex-row before:border-r-[3px] before:border-white before:border-solid before:w-[12%] before:h-[110px] before:mr-[32px] before:right-0 before:bottom-0 before:content-[''] before:absolute before:rotate-45 before:bg-transparent after:w-[82%] after:h-[90%] after:right-0 after:bottom-0 after:content-[''] after:absolute after:bg-yellow-300 after:[clip-path:polygon(100%_75%,75%_100%,100%_100%)]">
+                <div class="legend mt-[50px] text-left mr-[-200px]">
+                    <h2 class="text-[24px] font-bold">Enkayege Consrtuction <br> Company Web Design</h2>
+                </div>
+
+                <span
+                    class="border-t-[3px] border-b-[3px] border-r-[3px] border-white border-solid h-[320px] w-[300px] pl-[40px] pr-[60px] pt-[150px] text-left font-normal text-[14px] [clip-path:polygon(-1%_0,100%_0,100%_75.5%,74%_100%,-1%_100%)] before:content-[''] before:absolute before:top-0 before:left-[3rem] before:h-[50px] before:w-[50%] before:border-l-[3px] before:border-white before:border-solid after:content-[''] after:absolute after:bottom-0 after:left-[3rem] after:h-[190px] after:w-[50%] after:border-l-[3px] after:border-white after:border-solid">
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Labore explicabo dolorem reiciendis
+                        debitis
+                        velit.</p>
+                </span>
+
+            </div>
+
+        </div>
+    </header>
+
+    <main>
+        <!-- Section Content -->
+        <section class="content">
+            <!-- content-top -->
+            <div class="content-top relative flex flex-row justify-center py-0 px-[200px]">
+                <div class="content-top-img">
+                    <img class="mt-[-20px] w-[400px] h-[400px] object-cover shadow-[0px_10px_10px_0px_rgba(0,0,0,0.5)]"
+                        src="images/swapnil-potdar-FZL9lwgA2T8-unsplash.jpg" alt="">
+                </div>
+                <div class="content-top-box bg-yellow-300 w-[50px] h-[80px] self-start mt-[60px]"></div>
+                <div class="content-top-caption text-[#333] w-[400px] mt-[60px] mb-0 mx-[20px] self-start">
+                    <h2 class="text-[24px] font-bold">Vision and Mission</h2><br>
+                    <p class="text-[14px] font-normal">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi
+                        praesentium totam iste, id quis
+                        voluptas, saepe error
+                        facilis at quo reprehenderit eos! Aliquid quasi blanditiis unde numquam quod culpa deserunt!</p>
+                    <br>
+                    <p class="text-[14px] font-normal">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Rem
+                        asperiores error consequatur labore
+                        nam quam? Neque blanditiis voluptate tempore saepe molestias ab voluptates facere qui non,
+                        exercitationem vitae facilis soluta!</p>
+                </div>
+            </div>
+
+            <!-- cards -->
+            <div
+                class="cards flex flex-row justify-evenly overflow-hidden mx-[200px] my-[80px] text-[#333] items-center text-center">
+                <div class="card w-[30%] p-[40px]">
+                    <img class="w-[40%] m-auto" src="images/bim.png" alt="">
+                    <h4 class="mt-[20px] mb-[15px]">BIM Technology</h4>
+                    <span class="text-[14px]">BIM - Building Information Modeling</span>
+                </div>
+                <div class="card w-[30%] p-[40px]">
+                    <img class="w-[40%] m-auto" src="images/government.png" alt="">
+                    <h4 class="mt-[20px] mb-[15px]">Government Office</h4>
+                    <span class="text-[14px]">Government Office Architect & Engineer</span>
+                </div>
+                <div class="card w-[30%] p-[40px]">
+                    <img class="w-[40%] m-auto" src="images/school.png" alt="">
+                    <h4 class="mt-[20px] mb-[15px]">School Building</h4>
+                    <span class="text-[14px]">School Building <br> Architect & Engineer</span>
+                </div>
+                <div class="card w-[30%] p-[40px]">
+                    <img class="w-[40%] m-auto" src="images/hospital-building.png" alt=""><br>
+                    <h4 class="mb-[15px]">Hospital Building</h4>
+                    <span class="text-[14px]">Hospital Building Architect & Engineer</span>
+                </div>
+            </div>
+
+            <!-- projects -->
+            <div
+                class="projects bg-[url('images/beautiful-city.jpg')] h-[100vh] bg-cover flex color-[#fff] text-[#fff] flex-wrap items-center">
+                <div
+                    class="projects-caption-1 bg-black bg-opacity-60 color-[#fff] text-[#fff] w-[50%] h-[60%] ml-auto pt-[50px] pr-[200px] pb-[60px] pl-[50px] items-center">
+                    <h1 class="text-yellow-300 uppercase leading-[1.3] text-[42px] font-semibold">enkayege </h1>
+                    <h2 class="text-yellow-300 uppercase leading-[1.3] text-[32px] font-light">building</h2>
+                    <h3 class="text-[20px] font-medium mt-[20px] mb-[15px]">Let 's Help You</h3>
+                    <p class="text-[14px] font-light">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi
+                        praesentium totam iste, id quis
+                        voluptas, saepe error
+                        facilis at quo reprehenderit eos! Aliquid quasi blanditiis unde numquam</p>
+
+                    <button
+                        class="button bg-transparent border-2 border-solid border-white text-[#fff] h-[36px] w-[30%] font-semibold mt-[20px]">More
+                        About Us</button>
+                </div>
+                <div before="Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi praesentium totam iste, id quis voluptas, saepe error facilis at quo reprehenderit eos! Aliquid quasi blanditiis unde numquam quod culpa deserunt!"
+                    class="projects-caption-2 bg-[#0066a5] bg-opacity-80 text-white h-[40%] w-[80%] items-center py-0 px-[300px] flex before:content-[attr(before)] before:block before:absolute before:mt-[50px] before:ml-[220px] before:w-[400px] before:text-white before:text-[14px] before:font-light before:self-start after:border after:border-solid after:border-white after:absolute after:h-[150px] after:ml-[190px]">
+                    <ul class="list-none leading-[2] text-right flex flex-col">
+                        <li>
+                            <h4>Quality management</h4>
+                        </li>
+                        <li>
+                            <h4>Environmental</h4>
+                        </li>
+                        <li>
+                            <h4>Knowledge</h4>
+                        </li>
+                        <li>
+                            <h4>Health and Safety</h4>
+                        </li>
+                        <li>
+                            <h4>Business Partner</h4>
+                        </li>
+                    </ul>
+                    <div class="">
+                    </div>
+                </div>
+                <div class="projects-caption-3 bg-white color-white text-white h-[40%] w-[20%]"></div>
+            </div>
+
+            <!-- projects-cards -->
+            <div class="projects-cards flex justify-between mt-[120px] mr-[100px] mb-[50px] ml-[100px] gap-[40px]">
+                <div
+                    class="project-card w-[30%] rounded-[5px] overflow-hidden shadow-[rgba(50,50,93,0.25)_0px_2px_5px_-1px,rgba(0,0,0,0.3)_0px_1px_3px_-1px] hover:shadow-[0_8px_16px_0_rgba(0,0,0,0.2)]">
+                    <img class="w-[100%] h-[200px] object-cover" src="images/rahul-bhogal-Ub9LkIWxyec-unsplash.jpg"
+                        alt="Avatar">
+                    <div class="container mt-[-8px] p-[25px]">
+                        <h4 class="text-[16px] font-bold"><b>John Doe</b></h4>
+                        <p class="project-type text-[12px] font-bold">Projects 1</p>
+                        <span class="text-[12px] inline-block my-[15px] mx-0">Lorem ipsum dolor sit amet consectetur
+                            adipisicing elit <br><em class="text-[12px] not-italic font-semibold
+">2015</em></span>
+                        <p class="project-price text-[12px] font-bold">2,400,000 <i
+                                class="fa-solid fa-dollar-sign fa-sm"></i></p>
+                    </div>
+                </div>
+                <div
+                    class="project-card w-[30%] rounded-[5px] overflow-hidden shadow-[rgba(50,50,93,0.25)_0px_2px_5px_-1px,rgba(0,0,0,0.3)_0px_1px_3px_-1px] hover:shadow-[0_8px_16px_0_rgba(0,0,0,0.2)]">
+                    <img class="w-[100%] h-[200px] object-cover" src="images/rahul-bhogal-Ub9LkIWxyec-unsplash.jpg"
+                        alt="Avatar">
+                    <div class="container mt-[-8px] p-[25px]">
+                        <h4 class="text-[16px] font-bold"><b>John Doe</b></h4>
+                        <p class="project-type text-[12px] font-bold">Projects 2</p>
+                        <span class="text-[12px] inline-block my-[15px] mx-0">Lorem ipsum dolor sit amet consectetur
+                            adipisicing elit <br><em class="text-[12px] not-italic font-semibold
+">2015</em></span>
+                        <p class="project-price text-[12px] font-bold">2,400,000 <i
+                                class="fa-solid fa-dollar-sign fa-sm"></i></p>
+                    </div>
+                </div>
+                <div
+                    class="project-card w-[30%] rounded-[5px] overflow-hidden shadow-[rgba(50,50,93,0.25)_0px_2px_5px_-1px,rgba(0,0,0,0.3)_0px_1px_3px_-1px] hover:shadow-[0_8px_16px_0_rgba(0,0,0,0.2)]">
+                    <img class="w-[100%] h-[200px] object-cover" src="images/rahul-bhogal-Ub9LkIWxyec-unsplash.jpg"
+                        alt="Avatar">
+                    <div class="container mt-[-8px] p-[25px]">
+                        <h4 class="text-[16px] font-bold"><b>John Doe</b></h4>
+                        <p class="project-type text-[12px] font-bold">Projects 3</p>
+                        <span class="text-[12px] inline-block my-[15px] mx-0">Lorem ipsum dolor sit amet consectetur
+                            adipisicing elit <br><em class="text-[12px] not-italic font-semibold
+">2015</em></span>
+                        <p class="project-price text-[12px] font-bold">2,400,000 <i
+                                class="fa-solid fa-dollar-sign fa-sm"></i></p>
+                    </div>
+                </div>
+                <div
+                    class="project-card w-[30%] rounded-[5px] overflow-hidden shadow-[rgba(50,50,93,0.25)_0px_2px_5px_-1px,rgba(0,0,0,0.3)_0px_1px_3px_-1px] hover:shadow-[0_8px_16px_0_rgba(0,0,0,0.2)]">
+                    <img class="w-[100%] h-[200px] object-cover" src="images/rahul-bhogal-Ub9LkIWxyec-unsplash.jpg"
+                        alt="Avatar">
+                    <div class="container mt-[-8px] p-[25px]">
+                        <h4 class="text-[16px] font-bold"><b>John Doe</b></h4>
+                        <p class="project-type text-[12px] font-bold">Projects 3</p>
+                        <span class="text-[12px] inline-block my-[15px] mx-0">Lorem ipsum dolor sit amet consectetur
+                            adipisicing elit <br><em class="text-[12px] not-italic font-semibold
+">2015</em></span>
+                        <p class="project-price text-[12px] font-bold">2,400,000 <i
+                                class="fa-solid fa-dollar-sign fa-sm"></i></p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- projects-all -->
+            <div class="projects-all flex gap-[10px] items-baseline justify-center text-[#757575]">
+                <h3 class="font-bold">Show All Projects </h3>
+                <a href=""><i class="fa-solid fa-circle-arrow-right fa-lg" style="color: #4b4b4b;"></i></a>
+            </div>
+
+            <!-- customers -->
+            <div class="customers flex justify-around my-[50px] mx-[200px]">
+                <div class="customer h-[100px] w-[120px]">
+                    <img class="h-[100%] object-cover" src="images/622.jpg" alt="">
+                </div>
+                <div class="customer h-[100px] w-[120px]">
+                    <img class="h-[100%] object-cover" src="images/08_Supreme.jpg" alt="">
+                </div>
+                <div class="customer h-[100px] w-[120px]">
+                    <img class="h-[100%] object-cover" src="images/40626.jpg" alt="">
+                </div>
+                <div class="customer h-[100px] w-[120px]">
+                    <img class="h-[100%] object-cover" src="images/7252830.jpg" alt="">
+                </div>
+                <div class="customer h-[100px] w-[120px]">
+                    <img class="h-[100%] object-cover" src="images/8047101.jpg" alt="">
+                </div>
+                <div class="customer h-[100px] w-[120px]">
+                    <img class="h-[100%] object-cover" src="images/8945567.jpg" alt="">
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer
+        class="py-[80px] pr-[250px] pl-[80px] flex justify-evenly color-[#fff] text-[#fff] bg-[#222] text-[14px] font-light">
+        <!-- footer-logo -->
+        <div class="footer-logo">
+            <img class="w-[100px]" src="images/11259-removebg-preview.png" alt="">
+        </div>
+
+        <!-- Link -->
+        <div class="link-1 w-[15%]">
+            <ul class="list-none">
+                <li><a class="text-[#fff] no-underline hover:underline" href="#">Projects</a></li>
+                <li><a class="text-[#fff] no-underline hover:underline" href="#">Gallery</a></li>
+                <li><a class="text-[#fff] no-underline hover:underline" href="#">Human Resources</a></li>
+                <li><a class="text-[#fff] no-underline hover:underline" href="#">About Us</a></li>
+                <li><a class="text-[#fff] no-underline hover:underline" href="#">News</a></li>
+                <li><a class="text-[#fff] no-underline hover:underline" href="#">communication</a></li>
+            </ul>
+        </div>
+        <div class="link-2 w-[20%]">
+            <ul class="list-none flex flex-col gap-[20px]">
+                <li>Yukari Dudullu Mh. Necip Fazil
+                    Blv. Keyap Site. j2 Block No:44/156
+                    Umraniye/ISTANBUL</li>
+                <li>Mon -Friday: 09:00-18:00 <br>
+                    Sat 09:00 -14:00</li>
+                <li>Telephone <br>
+                    0216 228 42 18</li>
+                <li>E-mail <br>
+                    info@enkayegeyapi.com</li>
+            </ul>
+        </div>
+    </footer>
+</body>
+
+</html>
